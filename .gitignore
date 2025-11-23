@@ -1,0 +1,21 @@
+# Ignore virtual environment
+myenv/
+
+# Ignore Streamlit secrets
+.streamlit/secrets.toml
+
+# Ignore Python cache
+__pycache__/
+
+# Ignore Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Ignore data files (optional – remove this if you want data on GitHub)
+data/
+
+# VSCode settings folder
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db

@@ -3,17 +3,8 @@ myenv/
 venv/
 env/
 
-# Ignore model binaries >100 MB
-models/*.pkl
-models/*.joblib
-
-# Ignore large notebook outputs
-*.ipynb_checkpoints/
 
 # Ignore cache
 __pycache__/
 *.pyc
 
-# Ignore OS files
-.DS_Store
-Thumbs.db

@@ -16,7 +16,7 @@ This project includes data preprocessing, model training & evaluation, and an in
 
 ## 📂 Project Structure
 
-
+```
 Urban-Air-Quality-Forecasting/
 │
 ├── app/
@@ -39,7 +39,7 @@ Urban-Air-Quality-Forecasting/
 │
 ├── requirements.txt
 └── README.md
-
+```
 
 ---
 
@@ -73,20 +73,22 @@ models/imputer.pkl
 
 ### *1️⃣ Install dependencies*
 
+```
 pip install -r requirements.txt
+```
 
 
 ### *2️⃣ Run the Streamlit App*
 
+```
 streamlit run app/app.py
+```
 
 
 ---
 
 ## 📦 Requirements
 All dependencies are listed in:
-
-
 requirements.txt
 
 
@@ -112,11 +114,5 @@ The dashboard includes:
 
 ---
 
-## 📜 License
-This project is open-source and free to use.
-
----
-
 ## ✨ Author
 *Priya Shukla*  
-Urban Air Quality Forecasting Project

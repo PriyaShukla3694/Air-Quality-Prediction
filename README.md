@@ -69,49 +69,6 @@ Scaling and imputation transformations were also saved:
 models/scaler.pkl
 models/imputer.pkl
 
-
----
-
-## 🧪 Model Training Code (Core Part)
-
-python
-# Define models
-models = {
-    "Bayesian Ridge": BayesianRidge(),
-    "Random Forest": RandomForestRegressor(n_estimators=200, random_state=42),
-    "Linear Regression": LinearRegression()
-}
-
-# Train, evaluate, compare
-results = []
-for name, model in models.items():
-    model.fit(X_train_scaled, y_train)
-    y_pred = model.predict(X_test_scaled)
-
-    mae = mean_absolute_error(y_test, y_pred)
-    rmse = np.sqrt(mean_squared_error(y_test, y_pred))
-    r2 = r2_score(y_test, y_pred)
-    acc = 100 * (1 - np.mean(np.abs((y_test - y_pred) /
-                                    np.where(y_test == 0, 1e-6, y_test)))))
-
-    results.append({"Model": name, "MAE": mae, "RMSE": rmse,
-                    "R2": r2, "Accuracy (%)": acc})
-
-results_df = pd.DataFrame(results)
-best_idx = results_df['RMSE'].idxmin()
-best_name = results_df.loc[best_idx, 'Model']
-
-# Save best model
-if best_name == "Random Forest":
-    final_model = RandomForestRegressor(n_estimators=200, random_state=42)
-    final_model.fit(X_train_scaled, y_train)
-    joblib.dump(final_model, "../models/final_random_forest_model.pkl")
-    joblib.dump(scaler, "../models/scaler.pkl")
-    joblib.dump(imputer, "../models/imputer.pkl")
-
-
----
-
 ## 🚀 Running the App
 
 ### *1️⃣ Install dependencies*

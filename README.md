@@ -94,6 +94,12 @@ requirements.txt
 
 ---
 
+## 🔗 Live Web App  
+[![Open App](https://img.shields.io/badge/OPEN%20APP-000000?style=for-the-badge&logo=google-chrome)](https://your-app-link.com)
+
+
+---
+
 ## 📈 Visualizations (Heatmap, AQI Indicators)
 The dashboard includes:
 - AQI heatmap with dynamic color scale  

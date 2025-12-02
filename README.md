@@ -25,7 +25,10 @@ Urban-Air-Quality-Forecasting/
 │   ├── weather_api.py        # Weather API helper
 │   └── location_utils.py     # Location utilities
 │
-├── data/
+├──  api_tests/
+    └── test_pollution_api.py
+|
+|── data/
 │   └── city_day.csv          # Dataset used for training
 │
 ├── models/
@@ -34,8 +37,7 @@ Urban-Air-Quality-Forecasting/
 │   └── imputer.pkl                      # Saved imputer
 │
 ├── notebooks/
-│   ├── 01_preprocessing.ipynb
-│   └── 02_model_comparison.ipynb
+│   └── 01_model_comparison.ipynb
 │
 ├── requirements.txt
 └── README.md
